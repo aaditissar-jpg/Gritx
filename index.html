@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GRIT X Platform</title>
+    <meta name="description" content="GRIT X Platform - Elite Facilities, Events, and Memberships" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Sora', 'sans-serif'],
+            },
+            colors: {
+              bg: '#0b0f10',
+              surface: '#161b1d',
+              surfaceHighlight: '#1e2528',
+              primary: '#0ea95f', // Neon Green
+              'primary-hover': '#0b8e4e',
+              accent: '#7ef3b4', // Pale Green
+              muted: '#9ca3af',
+              border: 'rgba(255, 255, 255, 0.08)',
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              'cyber-grid': "linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)",
+            },
+            boxShadow: {
+              'neon': '0 0 20px rgba(14, 169, 95, 0.15), 0 0 40px rgba(14, 169, 95, 0.05)',
+              'neon-strong': '0 0 25px rgba(14, 169, 95, 0.4)',
+              'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.6s ease-out forwards',
+              'slide-up': 'slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --color-bg: #0b0f10;
+        --color-primary: #0ea95f;
+      }
+      
+      /* Cyber Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0b0f10; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e2528; 
+        border-radius: 4px;
+        border: 1px solid rgba(255,255,255,0.05);
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #0ea95f; 
+      }
+
+      /* Selection Color */
+      ::selection {
+        background: rgba(14, 169, 95, 0.3);
+        color: white;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--color-bg);
+        color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .glass {
+        background: rgba(11, 15, 16, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      
+      .glass-card {
+        background: rgba(22, 27, 29, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .text-glow {
+        text-shadow: 0 0 30px rgba(14, 169, 95, 0.4);
+      }
+      
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.84.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
