@@ -9,7 +9,7 @@ export const FACILITIES_DATA: Facility[] = [
     slug: 'box-cricket-arena',
     name: 'Box Cricket Arena',
     description: 'ProTurf A & B. Premium indoor AstroTurf arenas featuring shock-absorbing turf, LED floodlights, and digital scoreboards. Perfect for leather and soft ball matches in an air-cooled environment.',
-    image: '/assets/cricketarena.png',
+    image: 'assets/cricketarena.png',
     capacity: 22,
     features: ['Shock-absorbing Turf', 'LED Floodlights', 'Digital Scoreboards', 'Bowling Machine', 'Air-cooled'],
     hourlyRate: 60,
